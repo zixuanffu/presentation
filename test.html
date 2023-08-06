@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Become a homo economicus</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="傅子轩" />
+    <script src="libs/header-attrs-2.23/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Become a homo economicus
+]
+.subtitle[
+## 成为“经济人”
+]
+.author[
+### 傅子轩
+]
+.date[
+### 2023/07/13 (presented: 2023-08-06)
+]
+
+---
+
+class: inverse, center, middle
+
+# 温馨提示
+???
+大家好，我叫傅子轩，今天非常激动可以来占用大家宝贵的学习时间，今天我想介绍的是我的“老本行”经济学。经济学这个东西很有意思，一方面这个词一听上去就是和金钱、财富啊什么的挂钩，带着一点所谓的铜臭味，话糙理不糙，在很多大学，Economics这个专业是隶属于每一片羽毛都闪耀着金钱的光辉的商学院，我以前也觉得它和金融是一个东西，包括我现在和别人说我学“数学经济”，对方就会说，哦哦哦金融数学对吧？我就emmm。想起一个笑话，之前和别人说我是香港科技大学的，别人会说是港大吗？这种印象似对非对，因为在同一间学校里面，它也可以属于人文社科学院（social science），很神奇吧，那突然间就多了一点不问名利的意味。更有意思的是，你说它是人文社科吧，它又与我们传统意义上的文科不大一样，纵观诺贝尔经济学奖的得主，一溜儿都是数学家，包括我今天会提到的几个人。那么今天我希望能和大家一起了解一点经济学的皮毛儿，只是我上了那么十多门课之后，回想起来印象深刻而且我个人也感兴趣的话题。提前感谢一下焦哥给我这个时间，给我学弟学妹们练练手，因为之后读研究生就不仅仅是自己上课那么简单了，还要做助教给本科的小朋友们上课，这次还请学弟学妹们多包涵。
+本演示稿有很多很多英语，一方面是我从教科书/维基百科摘抄的时候就是英语，一方面是因为我觉得很多概念直接看英语反而会更明了，翻译成中文很绕口，给人一种陌生的，好像很厉害的样子，但其实内容很简单。
+---
+&lt;!-- # Economic man/经济人 --&gt;
+&lt;!-- &lt;!-- .center[![homoecon](homoeconomicus.jpg)] --&gt; --&gt;
+
+&lt;!-- ```{r setup, include=FALSE} --&gt;
+&lt;!-- options(htmltools.dir.version = FALSE) --&gt;
+&lt;!-- ``` --&gt;
+
+&lt;!-- ```{r, echo=FALSE, out.width="450px", out.height="300px",fig.align='center'} --&gt;
+&lt;!-- knitr::include_graphics("homoeconomicus.jpg") --&gt;
+&lt;!-- ``` --&gt;
+
+&lt;!-- 经济人（Economic man，拉丁语：Homo economicus），对应智人（拉丁语：Homo sapiens），又称作“经济人假设”，指的是一个理性的、自利的个体。这个假设认为，人们会在做出决策时，考虑到自己的利益，并在做出决策时进行**理性（rational)分析和计算**，以**最大程度地实现（maximize）**自己的利益。这种假设通常用于经济学中的行为模型，以解释人们在市场上的行为和决策。 --&gt;
+
+&lt;!-- ??? --&gt;
+&lt;!-- 经济人是什么东西？奇奇怪怪的。一个高度理性的个体，一个绝对的利己主义者。做任何事情的目的是为了最大化自己的利益。听起来是不是特别令人嗤之以鼻。其实我说我变成“经济人”完全是夸张。但为什么经济学领域会有这样一个概念的存在，是为了大家好建模……你想想你证明推理一些东西的时候是有很多假设的对吧，那些假设有一些是为了便于你证明定理的。此处同理。 --&gt;
+
+&lt;!-- --- --&gt;
+---
+# Economics/经济学
+
+大名鼎鼎的经济学家Alfred Marshall这么说：
+&gt;Economics is a study of mankind in the ordinary business of life;
+
+
+--
+我的第一印象是：~~画图~~
+
+&lt;img src="sup_dem.png" width="300px" height="200px" style="display: block; margin: auto;" /&gt;
+
+
+
+--
+&gt;it examines that part of individual and social action which is most closely connected with the attainment and with the use of material requisites of well-being. 
+
+它研究的是个人和社会行为中与获得和使用物质需求（如财富、资源、商品等）最密切相关的部分。换句话说，它关注的是人们在追求物质福利方面的**行为和决策**。
+
+???
+人类在日常生活中的行为的学科。 我的印象是很多图！当然这是我刚刚接触经济学的时候的感受，学到后面才意识到它不仅仅是几个曲线那么简单。刚刚那句话其实还没说完。更具体一点，是什么呢。
+不知道大家知不知道优化问题，就是寻找min max的那类问题，（比如抛物线的最高点），这在应用数学里面应该很常见，然后经济学的问题，很多也是“优化问题”，寻找利益最大化，以及最优解。作为一个商家，我要怎么定价，怎么竞争诸如此类，作为一个个体，我要怎么在游戏中获胜。但是现实社会是很复杂的，所以就要抽丝剥茧，定一下假设，简化一下场景，然后去建模，模拟你要研究的这个场景，比如我说的这个商家之间的竞争这个场景，然后建了模型之后，再去用数学去解决。相同的场景，可以因为你的假设有多简化，而在复杂程度上相差甚远，以至于在数学的使用上相差甚远。今天呢，我会提到几个我觉得很有意思的场景，同是被高度简化了的场景，所以使用到的使用也会很简单，甚至就是一些如图所示。
+
+---
+# Examples/举个栗子
+
+- 国家为什么要控制通货膨胀/紧缩？
+- 通货膨胀的时候为什么国家银行会提高利息/购买债券？
+- 怎么衡量一个国家的消费水平（为什么说去瑞x旅游贵）？
+--
+&lt;br&gt;
+- 供求关系，价格
+- 垄断和竞争
+- 我应该如何平衡我的工作（work）和娱乐（leisure）？
+- 人与人之间的信任/合作很容易破裂吗？
+- 小组项目的时候要不要划水（为什么会出现“三个和尚没水喝”）？
+- 有完美的民主选举投票机制吗？（Arrow's impossibility theorem, the Condorecet voting paradox...
+--
+&lt;br&gt;
+- 上学有什么用？我应该去UST还是TSU？
+- 为什么这两个国家之间的贸易往来如此之大？
+- 移民会不会造成当地薪水降低？
+- Discrimination要怎么量化呢？
+- ...
+
+???
+这是我照着我上课的这个课程大纲挑出的问题，今天就只能提到一点点，那话不多说我们先从经济学101开始。
+
+---
+class: inverse, center, middle
+
+# 供求关系 &lt;br&gt; Supply and demand
+???
+第一个想讲的是供求关系。
+---
+# 物以稀为贵，Too young too simple
+
+### Previously on the textbook:
+
+高中政治必修一《经济生活》：供求关系，公有制为主体、多种所有制经济共同发展的基本经济制度等等
+
+--
+### Supply and Demand
+&lt;img src="sup_dem.png" width="300px" height="200px" style="display: block; margin: auto;" /&gt;
+
+- 价格的变动：需求侧，供给侧。(Supply and demand shock)
+- 奈雪和喜茶，苹果手机和苹果配件。(Substitute and complement)
+- 价格和销量的变化。(elasticity)
+
+???
+为什么先讲供求关系，因为它是我记得的为数不多高中学过的东西，但具体学了什么我也不记得，想必是看起来没那么陌生的东西。所以第一个话题就当作是一个复习？
+但这次因为多了一张图而有意思多了。
+纵轴是什么，横轴是什么。我们首先看看这个需求曲线（demand curve），很合理吧。因为每个人对相同的东西，愿意付的钱是不一样的，当价格低于你的这个willingness to pay（你愿意为其支付的钱的时候）的时候，比如说小A很喜欢吃雪糕她愿意付10块钱，我只是一般般我愿意付8快钱，小c之愿意你就会去购买它，价格越低，就会低于更多人的这个线。所以价格越低，购买这个商品的人越多。
+再看下supply curve，其实同理的，当市场上这个商品的价格更高的时候，就会又更多的商家愿意去生产它。
+所以这样两条曲线决定了什么，就是价格和销量，这个平衡点，equilibrium。需求==供给。 point。为什么两个东西有不同的价格和不同的销量，就是因为他们的需求曲线和供给曲线不一样，他们的交点不同，最后的平衡点就不同。
+当自然灾害来临时，物资短缺，坐地起价，黑心商人，市场经济。比如说新冠的时候，一开始对口罩需求量特别大。价格飞涨。这是需求曲线的变化导致的。那后来价格有下来了，是因为政策要求工厂生产口罩，可能会有补贴之类的，所以供给曲线移动，那价格又恢复了。但是销量也是提高了的。达到了一个新的平衡点。
+我们还能从这个曲线看出什么呢？比如说两个上商品他们互为替代品，那一个……。
+还有就是一条曲线，我们会关注斜率对吧，不同的斜率他们代表着价格的变化对需求量的影响的程度，斜率越大，那就没什么影响（比如大米），斜率越小，线越平，那一点点价格变化都会带来很大的需求量改变（比如电子产品）。
+---
+# 物以稀为贵，Too young too simple
+
+### (Negative) Externatlity and taxes 
+
+#### 为什么要收税
+- Carbon tax
+- Smoking tax
+
+&lt;img src="neg_ext.png" width="600px" height="300px" style="display: block; margin: auto;" /&gt;
+???
+国家的税收自有其用途，同时也有调节市场的功能。为什么这么说呢？在这里要了解一个东西叫做consumer surplus and producer surplus. 其实就是这个三角形的面积，以为现在价格是P，但是这些消费者原本愿意以更高的价格购买，这些生产商是可以以p一下的价格生产，但是现在这个商品的交易价格是p所以对于这些consumer 和producer来说，他们有了额外的收获，两者额外的收获加起来就是对于社会这个总体的收获。然后我们要做的是以社会这个整体的角度，怎么样最大化这个三角形的面积。
+回到收税这个问题， 我们知道生产重金属会对环境产生影响，但是商家在生产某个东西的时候，只考虑进了个人的成本，比如说场地，人工，等等，这些是私人成本（private cost）但是我们要从社会的角度去思考这个问题，现在对于社会来说，生产重金属不仅仅有场地费人工费还有对环境的损失费，所以从社会的角度来说，供给曲线应该是这样子的，但是商家可不会考虑什么环境损失费呢，所以对重金属生产商来说，他们的供给曲线是这样子的，我们发现这样其实是过量生产了，对社会的角度来说是不好的，为什么不好，我们其实可以通过对比两个面积知道。比较一下面积。
+所以在生产的过程中，政府（也就是这个为全社会考虑的政府）希望这些企业不仅考虑进私人成本，也应该考虑社会成本，而这时候如果对这些企业收税，比如说本来生产每吨要花30美元，但是被征税之后就要每吨33美元，其实就是以税的方式强行让这些企业考虑进社会成本，那其实相当于把这个供给曲线向左平移，从而达到一个对于社会来说最优的供给曲线。我现在说的是供给曲线，但是对于需求曲线来说同理，比如我买烟，开车，其实都是会对其他人造成不好的影响，所以当我抽烟的时候，对于社会来说，这个consumer surplus是打折扣的，它是我的快乐-别人的痛苦，因为虽然我收获了快乐，但是有人因为我吸烟而难受啊，但是我消费的时候我才不考虑其他人呢，所以政府就会在向这些yanming们征税，其实是让他们为其他因为它吸烟而难受的人买单。
+---
+# 物以稀为贵，Too young too simple
+### (Positive) Externality and subsidy
+#### 为什么要补贴
+- subsidy on vaccination
+- highly subsidized education
+
+&lt;img src="pos_ext.png" width="600px" height="300px" style="display: block; margin: auto;" /&gt;
+???
+同理positive externality，我们可以说疫苗，它其实不仅仅给消费者带去了好处（免疫），同时因为它的免疫，营造了一个病毒更难以传播的环境，对这个环境中的每一个人都是有好处的。如果打疫苗的人也只是考虑自己，可能就不会有那么多人打疫苗，所以政府为了鼓励，也会对这些打疫苗的人提供补贴。 这在我们国家可能没有那么明显，但是美国那边对疫苗是有很大的抵触的，政府就会很多这方面（送代金券）这样的补贴。
+当时我学完这个章节，很感慨的一点是为什么我从来没想过怎么去量化身边习以为常的东西呢，价格的起伏，政策的指定，以及背后蕴含的一个社会总福利视角。当然并不是说社会total welfare越多越好，因为还有一个社会总福利分配的问题。efficiency and equaliy也是经济学中要研究的问题。
+---
+class: inverse, center, middle
+
+# 博弈论 &lt;br&gt; Game theory
+???
+讲完了市场这个无形的手，invisible hand, 我们再回到个人，来讲讲博弈论。
+---
+# Game on!
+
+### [囚徒困境](“https://en.wikipedia.org/wiki/Prisoner%27s_dilemma”)
+你和Jean Pierre刚刚在罢工游行中认识。你们趁乱把一家餐厅的大门和窗玻璃给砸了。本以为可以逃之夭夭，却很快被警察抓到。幸运的是，警察承认证据不足，最多只能把你们拘留3周。于是，警察希望和你们**单独**谈一谈：
+
+--
+
+那具体怎么谈？策略如下：
+
+|          | 指控对方 | 沉默    |
+|----------|----------|---------|
+| **指控对方** | **(-4,-4)**  | (0,-6)  |
+| **沉默**    | (-6,0)   | (-3,-3) |
+--
+
+假设你们不过刚刚认识，你不知道他会不会供出你……
+
+--
+
+如果你们是朋友呢……
+
+???
+这天你兴高采烈地参加了一个罢工游行。在游行的过程中，你和身边的小A聊了起来，谈到这次游行的目的———”退休改革“时，你们刚好经过一家高级餐厅，据小A说这是这次退休改革的倡导者常常光顾的地方，于是你们趁乱把这家餐厅给砸了。
+怎么谈呢？他给你们一个谈判提议，具体如下。
+如果你指控你的同伙，但是你的同伙保持沉默，那你就可以走了，他会被关六个月。 
+如果你保持沉默而你的同伙供出你，那他就可以走了，你要被关六个月。  
+如果你互相供出对方，那就是每个人四个月。  
+如果你们都保持沉默，那就还是各三个月。  
+注意你和Jean Pierre 是分开被审问的，在做出选择之前你们不能交流。
+那我们现在把四种情况放在表格里面做个比较。你觉得你会怎么做呢？
+
+假设对方保持沉默，那从我们自己的角度来说，我们应该怎么做， 对比一下数字，供出对方。
+那如果对方供出我们呢，从我们自己的角度来说，我们也应该供出对方。
+所以不管对方怎么做，我们都应该confess。
+由于对称，如果对方的思考方式和我一样，也应该供出我，所以最后的结果极大可能是我们互相指控。但这个是一个对大家都不好的结果，在博弈论下，我们得到的所谓的Nash Equilibrium纳什均衡却是一个对每一个玩家（player）都不好的结果。当然这个好与不好也是相对的，对于prisoner来说不好，但是设计这个谈判条件的谈判家来说确实妙极了。
+顺带提一嘴，Josh Nash获得了诺贝尔经济学家并且它是个数学家。有一部电影叫做美丽心灵，就是讲他的。
+
+
+
+---
+# Game on!
+
+### 两家沙县小吃的故事
+&lt;!-- .center[![shaxian](shaxian2.png)] --&gt;
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="dumplings.jpg" alt="蒸饺8元一笼" width="300px" height="200px" /&gt;
+&lt;p class="caption"&gt;蒸饺8元一笼&lt;/p&gt;
+&lt;/div&gt;
+--
+
+为什么这同样也是个囚徒困境呢？
+
+|          | 原价 | 降价  |
+|----------|----------|---------|
+| **原价** | (80,80)  | (0,132)  |
+| **降价**    | (132,0)   | (66,66) |
+
+--
+
+#### 反垄断！
+???
+你可能会说，我是遵纪守法的好公民，不会遇到这种情况，但是其实它无处不在，让我们再举个例子。两家沙县小吃的故事。我家楼下有两家沙县小吃，它们基本一模一样，蒸饺都是8元一笼，假设他们在8元的时候，一共有20个人来吃，但是如果我是左边这个店老板，我知道，如果我把价格稍微降点，6元一笼，那一共有22个人来吃，我的收入是132。那我是不是会想把价格降低呢，同理，对于二号店来说，也一样，它也想把价格降低。那现在都是6元，我们又是评分客户了，但是现在我只能赚66元了。对于老板来说这个囚徒困境就是价格战。但是对于客户来说，这种竞争让他们获得了更便宜的蒸饺。对于客户来说是很好的。
+如果这里只有一家沙县，没有这样的博弈论存在，也就是说沙县小吃的市场被垄断了，monopoly，那这时候这个价格就居高不下了。从这里我们可以理解到为什么美国有很多反垄断机构，严查一些科技巨头的并购行为。
+---
+# Game Theory/博弈论
+
+### OPEC (Organization of Petroleum Exporting Countries)
+- 13个国家
+- 掌握了世界上将近一半的原油生产
+- 协商产量及价格
+
+--
+
+How does prisoner's dilemma come into play?
+我们可以试着像刚刚那样画一个表格……
+
+|          | Increase | Cut  |
+|----------|----------|------|
+| **Increase** |x|x|
+| **Cut**    |x|x|
+???
+现实世界也有很多这样的例子，最有名的应该属opec。但是相比直接定价，他们需要调节协商产量。但我们同样可以画一个这样的表格。之后的分析是同理的。
+---
+# Game Theory/博弈论
+&lt;img src="cartel.jpg" width="50%" style="display: block; margin: auto;" /&gt;
+.center[[OPEC+ Cartel: The group that lost its way](https://nairametrics.com/2023/01/31/opec-cartel-the-group-that-lost-its-way/)]
+
+&gt; OPEC often has difficulty agreeing on policy decisions because its member countries differ widely in their oil export capacities, production costs, reserves, geological features, population, economic development, budgetary situations, and political circumstances.&lt;sup&gt;1&lt;sup&gt;
+
+.footnote[
+[1] Jad Mouawad (11 September 2008). "Saudis Vow to Ignore OPEC Decision to Cut Production". The New York Times. Archived from the original on 4 September 2017. Retrieved 11 February 2017.
+]
+
+???
+opec说他们的宗旨是Balanced market and stable prices……其实他们一个也做不到，什么是balanced market，价格高可能对于他们来说就是balance……stable同样难，因为要达到stable就是一个长期的合作，但是从这个囚徒困境我们也能看出来，合作其实并不容易。
+
+---
+# Game Theory/博弈论
+
+.center[&lt;iframe width="700" height="400" src="https://www.youtube.com/embed/PCcVODWm-oY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+]
+???
+在这里推荐一个系列的课程叫做crash course economics，应该b站上也有。如果感兴趣的话，之后有时间了可以看一看着一系列，学懂了基本上就是掌握了经济学101的知识了。
+---
+class: inverse, center, middle
+
+# 通货膨胀 &lt;br&gt; Inflation
+???
+我们讲了市场，谈了个人，再上升到国家，来看看经济学的存在。也就是通货膨胀这个话题。
+---
+# 我膨胀了
+
+为什么国家（银行）要管控通货膨胀率呢？房租和水电共涨，物价和工资齐飞。好像也没什么不好？
+--
+
+1. 非按比例增长
+&gt; For example, retirees in some countries receive payments that do not keep up with the price level, so they lose in relation to other groups when inflation is high.
+
+2. 增大不确定性
+&gt;Variations in relative prices also lead to more
+uncertainty, making it harder for firms to make decisions about the future, such
+as investment decisions. Some prices, which are fixed by law or by regulation, lag
+behind the others, leading to changes in relative prices. 
+--
+
+
+那通货紧缩呢？可能还更麻烦。
+&gt;Most macroeconomists believe that the best rate of inflation is a low and stable rate of
+inflation, somewhere between 1 and 4%.
+
+???
+我以前搞不懂通货膨胀有什么问题。很多时候一些价格、工资是固定的。
+从企业的角度来看，通货膨胀会增大价格的不确定性。
+通货紧缩是一样的道理，而且还会更麻烦。因为通货紧缩反而没有那么容易用政策调节。
+---
+# 我膨胀了
+
+让我们看看美国的通货膨胀率
+&lt;img src="fredgraph_usa.png" width="800px" height="250px" style="display: block; margin: auto;" /&gt;
+--
+再看看中国的
+&lt;img src="fredgraph_usachn.png" width="800px" height="250px" style="display: block; margin: auto;" /&gt;
+???
+2022美国的通货膨胀率是高达8.3%。而刚刚说1-4之间。
+但物价为什么会涨，还是可以从供给需求来分析。
+2022年为什么是因为供给。1995为什么是因为经济发展。
+
+---
+# 我膨胀了
+2021-2022年，因为新冠疫情，各国的GDP、就业率都不太好看，可以看到美国当时的通货膨胀率是8.3%，那时新闻常有”降息呀，补贴啊”之类的。
+--
+
+
+可是最近的新闻是，通货膨胀率降低了以及FED要提高利率。
+&lt;img src="inflation_news.png" width="600px" height="300px" style="display: block; margin: auto;" /&gt;
+
+### 为什么会有这样一种政策呢？
+???
+你可能偶尔会在新闻里看到类似利息上调下调的新闻。但是我之前完全没有不当一会儿事，权当是央行拍脑袋的决定。但是今天我想粗略地讲一讲为什么会有这个政策。
+---
+# 看图说话
+先别急！让我们一起看看经济学课本最喜欢的东西  
+
+
+&lt;img src="islm.png" width="600px" height="300px" style="display: block; margin: auto;" /&gt;
+???
+让我们一起来分析一下这个图。
+我们一开始说到什么需求曲线和供给曲线。
+---
+# 看图说话
+### IS-curve &amp; LM curve
+Total Demand (Z) &amp; Total Supply (Y)
+`$$Z\equiv C(Y,T)+I(Y,i)+G$$`
+
+Equilibrium in the goods market
+`$$Z=Y$$`
+
+Equilibrium in the financial market
+`$$i$$`
+&lt;img src="is.png" width="250px" height="200px" /&gt;&lt;img src="is_i.png" width="250px" height="200px" /&gt;&lt;img src="lm.png" width="250px" height="200px" /&gt;
+
+???
+先看看IS curve，看下社会总支出（Z)和总收入(Y)，这两个相等的，社会总需求包括消费 consumption，投资（Investment）和政府支出（G), 
+然后消费受总收入Y和税T影响，投资I受总收入Y和利息i的影响。政府这个我们就先假定是一个常数。
+这个是需求曲线(斜率是小于1），这个是供给曲线（Y=Z)。
+那这个IS curve要怎么画呢？（提高i，提高Z，然后对应着画一画）
+横轴是Y 纵轴是i。
+
+再看看LM curve ，这个其实很简单就是一个央行定的利息。
+The LM Curve The central bank chooses the interest rate (and adjusts the money supply so as to achieve it).
+把IS LM curve 放在一起我看就能看到，央行定的利息，会怎么影响到社会生产总值。
+
+---
+# 看图说话
+## 财政政策/Fiscal policy 
+### 增加税收/The effects of an increase in taxes
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+## 货币政策/Monetary policy
+### 提高税率/The effects of a decrease in interest rate
+???
+那这样一个图有什么用呢，比如说在GDP比较高的时候，我们想要降低一下社会生产总值。那怎么做。我们可以动用财政手段，fiscal policy提高政府的消费，也就是把IS往上移动。
+我们还可以使用货币手段，monetary policy，这时候其实就是调节利率，把LM上移动。
+当然也可以两者都结合。
+为什么说deflation还更麻烦呢，因为这个时候如果利率已经很低了，你就没有办法往线往下移动了。
+
+&lt;!-- --- --&gt;
+
+&lt;!-- # PPP  --&gt;
+
+&lt;!-- 一年前，我踏上了前往美丽乡村--瑞士的旅程，来到莱芒湖畔的EPFL交换。 --&gt;
+&lt;!-- 临行前，大家都叮嘱我，瑞士好贵，（却也很美）。 --&gt;
+
+
+&lt;!-- ```{r, echo=FALSE, out.width="60%", fig.align='center'} --&gt;
+&lt;!-- knitr::include_graphics("epfl.jpg") --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- -- --&gt;
+
+
+&lt;!-- 当我们谈论在某个地方消费很高时，我们在谈论什么？ --&gt;
+
+&lt;!-- PPP/Purchasing Power Parity/购买力区分 --&gt;
+
+&lt;!-- --- --&gt;
+&lt;!-- # Big Mac  --&gt;
+
+&lt;!-- ```{r, echo=FALSE, out.width="60%",fig.align='center'} --&gt;
+&lt;!-- knitr::include_graphics("bigmac.jpg") --&gt;
+&lt;!-- ``` --&gt;
+
+&lt;!-- --- --&gt;
+&lt;!-- # Big Mac Exchange Rate --&gt;
+
+&lt;!-- |Country |$$P^{BigMac}$$ | `\(\varepsilon\)`| `\(\varepsilon P^{BigMac}\)` |$$e^{BigMac}$$| --&gt;
+&lt;!-- |---|---|---|---|---|---|---| --&gt;
+&lt;!-- |Switzerland |6.50 |1.02| 6.62| 1.19| --&gt;
+&lt;!-- |United States |5.58| 1 |5.58| 1| --&gt;
+&lt;!-- |Canada| 6.77 |0.75| 5.08| 0.91|  --&gt;
+&lt;!-- |Euro area |4.05 |1.15| 4.64 |0.83|  --&gt;
+&lt;!-- |China |20.90 |0.15| 3.05| 0.55|  --&gt;
+&lt;!-- |India |178 |0.01| 2.55| 0.46|  --&gt;
+&lt;!-- |Russia| 110.17| 0.01| 1.65| 0.30|  --&gt;
+
+&lt;!-- 当我们把这个Big Mac换成"A basket of goods"的时候，我们就肩负起了World Bank’s International --&gt;
+&lt;!-- Comparison Program (ICP)的重任。 --&gt;
+&lt;!-- &gt;About every six years ICP collects price level data of more than 1,000 individual goods for 199 countries --&gt;
+
+---
+class: inverse, center, middle
+# 社会选择理论 &lt;br&gt; Social Choice Theory 
+???
+那我们讲了市场个人国家，最后说一个从个人到国家的过程吧，就是民主选举啦。
+---
+# 众口难调
+
+### 投票经济学
+&gt; Social choice theory or social choice is a theoretical framework for analysis of combining individual opinions, preferences, interests, or welfares to reach a collective decision or social welfare in some sense. Social choice theory is concerned with how to translate the preferences of individuals into the preferences of a group. &lt;sup&gt;1&lt;sup&gt;
+
+#### 应用场景
+- 立法
+- 选举
+
+#### 规则和机制
+不仅仅是少数服从多数那么简单……   
+
+.footnote[[1]https://en.wikipedia.org/wiki/Social_choice_theory]
+???
+这个领域其实是经济学领域的社会选择理论，我就取个昵称叫投票经济学。
+这个领域是研究如何调和一个团体中的个体的偏好、观点、兴趣，从而做出一个共同的决策（比如立法案，选出一个选举人）。
+投票经济学的应用场景，就是我们刚刚提到的立法、选举以及各种各样的需要结合中医的地方。投票经济学也是一个很有学问的领域，不仅仅是少数服从多数那么简单~
+
+---
+# 剪刀石头布
+
+### [Condorcet Voting Paradox](https://en.wikipedia.org/wiki/Condorcet_method)
+Suppose we have three candidates, A, B, and C, and that there are three voters with preferences as follows (candidates being listed left-to-right for each voter in decreasing order of preference):
+
+|Voter|	First preference|	Second preference|	Third preference|
+|---|---|---|---|
+|Voter 1	|A|	B|	C|
+|Voter 2	|B|	C|	A|
+|Voter 3|	C	|A	|B|
+  
+--
+现在我们采取一种两两比较的投票方式（Robert's Rules of Order）  
+
+--
+1. A-B-C (C)  
+
+--
+2. B-C-A (A)  
+
+--
+3. C-A-B (B)
+4. ...
+???
+在这个领域有几个有意思的理论，今天我想介绍一个悖论，叫作condorcet voting paradox。来举个例子，假设。。。
+假如先排序ABC，先比较AB, 然后赢了的再和C比较, 那赢的会是C。
+---
+# 剪刀石头布
+To illustrate this,
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="condorcet.png" alt="Each voter prefers a closer candidate over a farther.&amp;lt;br&amp;gt;Arrows show the order in which voters prefer the candidates." width="250px" height="250px" /&gt;
+&lt;p class="caption"&gt;Each voter prefers a closer candidate over a farther.&lt;br&gt;Arrows show the order in which voters prefer the candidates.&lt;/p&gt;
+&lt;/div&gt;
+
+So why do we select different winners from different voting orders?  
+Because there's a **cyclic preference** order of the group!
+
+这样两两比较的投票方式常见于法案的起草与通过。
+???
+为什么会出现这样的情况呢？因为如果我们按照上述服从多数的方式去合计团体的偏好，会发现团体的偏好是循环的。A&gt;B&gt;C&gt;A.
+---
+# Not nothing is impossible 
+### [Arrow's Impossibility Theorem](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem)
+
+
+&gt; 1. If every voter prefers alternative X over alternative Y, then the group prefers X over Y.
+2. If every voter's preference between X and Y remains unchanged, then the group's preference between X and Y will also remain unchanged (even if voters' preferences between other pairs like X and Z, Y and Z, or Z and W change).
+3. There is no "dictator": no single voter possesses the power to always determine the group's preference.
+
+In short, the theorem states that no rank-order electoral system can be designed that always satisfies these three "fairness" criteria.
+
+--
+## [Economics is a dismal science--By Thomas Carlyle](https://www.theatlantic.com/business/archive/2013/12/why-economics-is-really-called-the-dismal-science/282454/) 
+（手动狗头
+
+
+???
+我们国家可能没有太深刻的体会，但是欧美国家的投票机制还是有点复杂的...
+
+都是nothing is impossible 但是这个arrow's impossibility theorem是真的impossible。它主要证明了一个投票机制的不存在，现在说的投票不只是选出一个人，而是给每一个candidate做一个排序。 首先arrow定义了几个公平的条件 1. 2. 3. dictator 这个说的这个机制它应该是融合了每一个人的偏好，而不是群体中某一个人的偏好。Arrow证明了这个社会选择机制是不存在的，没有一个机制可以满足这几个arrow定义的公平的条件。是不是听起来很令人失望。印证了一句话，economics is a dismal science. 经济学是个令人郁闷的学科。 手动狗头一下
+---
+class: inverse, center, middle
+
+# Thanks!
+---
+class: center, middle
+
+# Credits
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
