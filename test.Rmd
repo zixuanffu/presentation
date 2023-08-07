@@ -293,13 +293,14 @@ knitr::include_graphics("fredgraph_usachn.png")
 
 ---
 # 我膨胀了
-2021-2022年，因为新冠疫情，各国的GDP、就业率都不太好看，可以看到美国当时的通货膨胀率是8.3%，那时新闻常有”降息呀，补贴啊”之类的。
---
 
+我们再看看美国的利息在相同时间段的变化。
+```{r, echo=FALSE, fig.align='center', out.width="800px",out.height="250px"}
+knitr::include_graphics("fredgraph_usa.png")
+```
 
-可是最近的新闻是，通货膨胀率降低了以及FED要提高利率。
-```{r, echo=FALSE, fig.align='center', out.width="600px",out.height="300px"}
-knitr::include_graphics("inflation_news.png")
+```{r, echo=FALSE, fig.align='center', out.width="800px",out.height="250px"}
+knitr::include_graphics("fredffr.png")
 ```
 
 ### 为什么会有这样一种政策呢？
